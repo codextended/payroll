@@ -1,0 +1,19 @@
+server:
+  port: 8088
+spring:
+  datasource:
+    driver-class-name: org.postgresql.Driver
+    url: jdbc:postgresql://localhost:5432/payroll
+    username: postgres
+    password: 10isIlleg@l
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+      use-new-id-generator-mappings: false
+    show-sql: false
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
+        format_sql: true
+
